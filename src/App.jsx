@@ -8,6 +8,7 @@ import AvisImposition from './pages/AvisImposition';
 import MinistryDashboard from './pages/MinistryDashboard';
 import FiscalCartography from './pages/FiscalCartography';
 import Analyses from './pages/Analyses';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
         <Route path="/ministry/cartography" element={<FiscalCartography />} />
         <Route path="/ministry/analyses" element={<Analyses />} />
         {/* Catch all - redirect to home */}
-        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );
